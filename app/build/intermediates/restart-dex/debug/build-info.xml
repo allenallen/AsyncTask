@@ -4,27 +4,27 @@
     api-level="23"
     density="560dpi"
     format="7"
-    timestamp="23260511563066"
+    timestamp="24516537527851"
     token="-7563563899709317233" >
 
     <task
         name="javac"
-        duration="128" />
+        duration="93" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="36" />
+        duration="38" />
     <task
         name="verifier"
-        duration="7" />
+        duration="8" />
 
     <artifact
         location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="23260511563066" >
+    <build timestamp="24516537527851" >
         <artifact
             location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

@@ -9,11 +9,13 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class HttpManager {
 
-    public static HashMap<String,String> getData(String uri){
+    public static ArrayList<StockModel> getData(String uri){
 
         AndroidHttpClient client = AndroidHttpClient.newInstance("AnAgent");
         HttpGet request = new HttpGet(uri);
@@ -23,8 +25,8 @@ public class HttpManager {
             response = client.execute(request);
             String hResponse = EntityUtils.toString(response.getEntity());
 
-            HashMap<String,String> map = (HashMap<String,String>) Parser.parseHtmlString(hResponse);
-            return map;
+            ArrayList<StockModel> list = Parser.parseHtmlString(hResponse);
+            return list;
             }
         catch (Exception e){
             e.printStackTrace();

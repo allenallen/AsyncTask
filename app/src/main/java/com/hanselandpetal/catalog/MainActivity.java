@@ -83,7 +83,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			updateDisplay("Starting Task");
+			updateDisplay("Getting Closing Prices\n\n\n");
 
 			if(taskList.size() == 0) {
 				pb.setVisibility(View.VISIBLE);
@@ -93,14 +93,15 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected String doInBackground(String... params) {
-			HashMap<String,String> content = HttpManager.getData(params[0]);
+			ArrayList<StockModel> list = HttpManager.getData(params[0]);
 
 			StringBuilder sb = new StringBuilder();
 
-			for(String keys : content.keySet()){
-				sb.append(keys);
+			for(StockModel item : list){
+				if(item.getName() != null)
+				sb.append(item.getName());
 				sb.append(" -- ");
-				sb.append(content.get(keys).toString());
+				sb.append(item.getClose());
 				sb.append("\n");
 			}
 

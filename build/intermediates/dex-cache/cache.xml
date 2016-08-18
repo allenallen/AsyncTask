@@ -12,14 +12,14 @@
         jar="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="9ecc5a19b0f65a49cb2cc5361eb0a9bce7fd2167">
+        sha1="257c5bb0fca3e0d1e516c00ad8ef2e08bfbd3b66">
         <dex dex="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_eb2c496d238a84fc5fb10c9fdd22ebbae606a73f/classes.dex" />
     </item>
     <item
         jar="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.1"
-        sha1="2b879e00e4f7ddbfb4e6efc9952732130d5751b1">
+        sha1="5789685daa3149a0ca5556059c16b8faea9c84f0">
         <dex dex="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5543ab4bdd2feecdc6d2dd419898b23cbff05e07/classes.dex" />
     </item>
     <item
