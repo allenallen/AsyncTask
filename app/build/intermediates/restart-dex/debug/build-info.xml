@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    density="560dpi"
+    format="7"
+    timestamp="23260511563066"
+    token="-7563563899709317233" >
+
+    <task
+        name="javac"
+        duration="128" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="36" />
+    <task
+        name="verifier"
+        duration="7" />
+
+    <artifact
+        location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="23260511563066" >
+        <artifact
+            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>
