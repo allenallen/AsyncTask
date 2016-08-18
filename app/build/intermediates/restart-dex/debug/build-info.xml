@@ -4,26 +4,23 @@
     api-level="23"
     density="560dpi"
     format="7"
-    timestamp="26073198081022"
+    timestamp="26410495351392"
     token="-7563563899709317233"
     verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="221" />
+        duration="157" />
     <task
         name="instant-run-dex"
-        duration="1066" />
+        duration="1044" />
     <task
         name="instant-run-transform"
-        duration="15" />
+        duration="12" />
     <task
         name="verifier"
-        duration="3" />
+        duration="4" />
 
-    <artifact
-        location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
     <artifact
         location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/reload-dex/debug/classes.dex"
         type="RELOAD_DEX" />
@@ -34,11 +31,25 @@
             type="MAIN" />
     </build>
     <build
-        timestamp="26073198081022"
-        verifier="COMPATIBLE" >
+        timestamp="26293195060120"
+        verifier="R_CLASS_CHANGE" >
         <artifact
             location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
+        <artifact
+            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="26357788851993"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/builds/debug/26357788851993/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="26410495351392"
+        verifier="COMPATIBLE" >
         <artifact
             location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/reload-dex/debug/classes.dex"
             type="RELOAD_DEX" />

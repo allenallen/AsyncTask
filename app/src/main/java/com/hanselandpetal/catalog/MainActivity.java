@@ -55,6 +55,10 @@ public class MainActivity extends Activity {
 				Toast.makeText(this, "Network not available", Toast.LENGTH_LONG).show();
 			}
 		}
+
+		if(item.getItemId() == R.id.action_clear){
+			output.setText("");
+		}
 		return false;
 	}
 

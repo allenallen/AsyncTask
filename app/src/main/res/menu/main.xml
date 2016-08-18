@@ -6,4 +6,8 @@
         android:title="@string/do_task"
         android:orderInCategory="100"
         android:showAsAction="always"/>
+    <item android:id="@+id/action_clear"
+        android:title="@string/clear"
+        android:orderInCategory="200"
+        android:showAsAction="always"/>
 </menu>
