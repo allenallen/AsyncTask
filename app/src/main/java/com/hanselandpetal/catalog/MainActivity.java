@@ -1,8 +1,10 @@
 package com.hanselandpetal.catalog;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -50,7 +52,7 @@ public class MainActivity extends ListActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if (item.getItemId() == R.id.action_do_task) {
 			if(isOnline()) {
-				requestData("http://wsj.com/mdc/public/page/9_3024-AsianStocks_MANILA.html");
+				requestData("http://phisix-api4.appspot.com/stocks.json");
 			}
 			else{
 				Toast.makeText(this, "Network not available", Toast.LENGTH_LONG).show();
@@ -60,6 +62,8 @@ public class MainActivity extends ListActivity {
 		if(item.getItemId() == R.id.action_clear){
 			//output.setText("");
 		}
+
+
 		return false;
 	}
 
@@ -72,7 +76,6 @@ public class MainActivity extends ListActivity {
 		StockAdapter adapter = new StockAdapter(this,R.layout.list_layout,stockList);
 
 		setListAdapter(adapter);
-
 		//output.append(message + "\n");
 	}
 
@@ -86,6 +89,27 @@ public class MainActivity extends ListActivity {
 		}
 
 		return false;
+	}
+
+	@Override
+	protected void onListItemClick(ListView l, View v, int position, long id) {
+		super.onListItemClick(l, v, position, id);
+
+		StockModel t = (StockModel) this.getListAdapter().getItem(position);
+//		Toast.makeText(this,t.getName(),Toast.LENGTH_SHORT).show();
+
+		AlertDialog.Builder alert = new AlertDialog.Builder(this);
+		alert.setTitle(t.getName());
+		alert.setMessage("Current price: " + t.getPrice() + "\n"
+						+ "Percent Change: " + t.getPctChange());
+		alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+
+			}
+		});
+
+		alert.create().show();
 	}
 
 	private class MyTask extends AsyncTask<String, String, String>{

@@ -4,35 +4,35 @@
     api-level="23"
     density="560dpi"
     format="7"
-    timestamp="2078585886863"
+    timestamp="8258589398307"
     token="-7563563899709317233" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="367" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="69" />
     <task
         name="verifier"
-        duration="0" />
+        duration="17" />
 
     <artifact
-        location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+        type="DEX" />
 
-    <build timestamp="1875519901182" >
+    <build timestamp="7329831527376" >
         <artifact
             location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="2078585886863" >
+    <build timestamp="8258589398307" >
         <artifact
-            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
+            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>
