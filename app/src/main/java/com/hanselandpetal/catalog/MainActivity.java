@@ -1,6 +1,7 @@
 package com.hanselandpetal.catalog;
 
 import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -10,6 +11,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,11 +20,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ListActivity {
 
-	TextView output;
 	ProgressBar pb;
 	List<MyTask> taskList;
+	private List<StockModel> stockList;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +32,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 //		Initialize the TextView for vertical scrolling
-		output = (TextView) findViewById(R.id.textView);
-		output.setMovementMethod(new ScrollingMovementMethod());
+		//output.setMovementMethod(new ScrollingMovementMethod());
 
 		pb = (ProgressBar) findViewById(R.id.progressBar);
 		pb.setVisibility(View.INVISIBLE);
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
 		}
 
 		if(item.getItemId() == R.id.action_clear){
-			output.setText("");
+			//output.setText("");
 		}
 		return false;
 	}
@@ -67,8 +68,12 @@ public class MainActivity extends Activity {
 		task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, uri);
 	}
 
-	protected void updateDisplay(String message) {
-		output.append(message + "\n");
+	protected void updateDisplay() {
+		StockAdapter adapter = new StockAdapter(this,R.layout.list_layout,stockList);
+
+		setListAdapter(adapter);
+
+		//output.append(message + "\n");
 	}
 
 	protected boolean isOnline(){
@@ -87,7 +92,7 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected void onPreExecute() {
-			updateDisplay("Getting Closing Prices\n\n\n");
+			//updateDisplay();
 
 			if(taskList.size() == 0) {
 				pb.setVisibility(View.VISIBLE);
@@ -97,34 +102,24 @@ public class MainActivity extends Activity {
 
 		@Override
 		protected String doInBackground(String... params) {
-			ArrayList<StockModel> list = HttpManager.getData(params[0]);
+			String toParse = HttpManager.getData(params[0]);
 
-			StringBuilder sb = new StringBuilder();
 
-			for(StockModel item : list){
-				if(item.getName() != null)
-				sb.append(item.getName());
-				sb.append(" -- ");
-				sb.append(item.getClose());
-				sb.append("\n");
-			}
 
-			return sb.toString();
+			return toParse;
 		}
 
 		@Override
 		protected void onPostExecute(String result) {
-			updateDisplay(result);
-
 			taskList.remove(this);
 			if(taskList.size() == 0) {
 				pb.setVisibility(View.INVISIBLE);
 			}
+			stockList = Parser.parseHtmlString(result);
+			updateDisplay();
+
+
 		}
 
-		@Override
-		protected void onProgressUpdate(String... values) {
-			updateDisplay(values[0]);
-		}
 	}
 }

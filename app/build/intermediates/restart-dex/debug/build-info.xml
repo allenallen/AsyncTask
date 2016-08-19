@@ -4,55 +4,35 @@
     api-level="23"
     density="560dpi"
     format="7"
-    timestamp="26410495351392"
-    token="-7563563899709317233"
-    verifier="COMPATIBLE" >
+    timestamp="2078585886863"
+    token="-7563563899709317233" >
 
     <task
         name="javac"
-        duration="157" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="1044" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="12" />
+        duration="0" />
     <task
         name="verifier"
-        duration="4" />
+        duration="0" />
 
     <artifact
-        location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="24516537527851" >
+    <build timestamp="1875519901182" >
         <artifact
             location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="26293195060120"
-        verifier="R_CLASS_CHANGE" >
+    <build timestamp="2078585886863" >
         <artifact
             location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/resources-debug.ap_"
             type="RESOURCES" />
-        <artifact
-            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="26357788851993"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/builds/debug/26357788851993/classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="26410495351392"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

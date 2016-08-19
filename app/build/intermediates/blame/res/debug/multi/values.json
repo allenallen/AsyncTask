@@ -11,7 +11,14 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/dimens.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 88,
+                        "endColumn": 57,
+                        "endOffset": 141
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/dimens.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 146,
+                        "endColumn": 55,
+                        "endOffset": 197
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 209
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 44,
+                        "endOffset": 96
+                    }
                 }
             },
             {
@@ -66,7 +87,14 @@
                     "endOffset": 294
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 154,
+                        "endColumn": 44,
+                        "endOffset": 194
+                    }
                 }
             },
             {
@@ -78,7 +106,14 @@
                     "endOffset": 347
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 101,
+                        "endColumn": 52,
+                        "endOffset": 149
+                    }
                 }
             },
             {
@@ -90,7 +125,14 @@
                     "endOffset": 399
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 199,
+                        "endColumn": 51,
+                        "endOffset": 246
+                    }
                 }
             },
             {
@@ -98,25 +140,60 @@
                     "startLine": 9,
                     "startColumn": 4,
                     "startOffset": 404,
-                    "endLine": 15,
-                    "endColumn": 12,
-                    "endOffset": 690
+                    "endColumn": 48,
+                    "endOffset": 448
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/styles.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 291,
+                        "endColumn": 48,
+                        "endOffset": 335
+                    }
                 }
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 695,
-                    "endLine": 18,
+                    "startOffset": 453,
+                    "endLine": 16,
                     "endColumn": 12,
-                    "endOffset": 850
+                    "endOffset": 739
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/styles.xml"
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 744,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 899
+                },
+                "from": {
+                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 510,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 665
+                    }
                 }
             }
         ]

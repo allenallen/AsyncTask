@@ -6,5 +6,6 @@
     <string name="do_task">Get Data</string>
     <string name="placeholder">Placeholder</string>
     <string name="clear">Clear</string>
+    <string name="stock_image_ph">Image</string>
 
 </resources>

@@ -7,6 +7,7 @@
     <string name="do_task">Get Data</string>
     <string name="hello_world">Hello world!</string>
     <string name="placeholder">Placeholder</string>
+    <string name="stock_image_ph">Image</string>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

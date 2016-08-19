@@ -15,7 +15,7 @@ import java.util.List;
 
 public class HttpManager {
 
-    public static ArrayList<StockModel> getData(String uri){
+    public static String getData(String uri){
 
         AndroidHttpClient client = AndroidHttpClient.newInstance("AnAgent");
         HttpGet request = new HttpGet(uri);
@@ -25,8 +25,8 @@ public class HttpManager {
             response = client.execute(request);
             String hResponse = EntityUtils.toString(response.getEntity());
 
-            ArrayList<StockModel> list = Parser.parseHtmlString(hResponse);
-            return list;
+            //ArrayList<StockModel> list = Parser.parseHtmlString(hResponse);
+            return hResponse;
             }
         catch (Exception e){
             e.printStackTrace();
