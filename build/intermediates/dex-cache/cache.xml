@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="d7aa8bc18867a5b10e2384eb7cced6cb1f3b1b77">
+        <dex dex="/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bb9ff0c1a6d0c6c42d81704ee14fa3c92264eb8f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="6bef05a2c48b22b3c819546830f765e2a71e8ef7">
+        <dex dex="/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_50fea540ecadc459d15216cad7e7cc81ad84b374/classes.dex" />
+    </item>
+    <item
+        jar="/Users/eaarcenal/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_df34c9a584fb1408bc221a8cadce732af92bedc0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/eaarcenal/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.9.2/5e3bda828a80c7a21dfbe2308d1755759c2fd7b4/jsoup-1.9.2.jar"
+        jumboMode="true"
+        revision="24.0.1"
+        sha1="5e3bda828a80c7a21dfbe2308d1755759c2fd7b4">
+        <dex dex="/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/transforms/dex/debug/folders/1000/10/jsoup-1.9.2_60bf3ad50524a3c22184ac2e34b31c53af8bb7b3/classes.dex" />
+    </item>
+
+</items>
