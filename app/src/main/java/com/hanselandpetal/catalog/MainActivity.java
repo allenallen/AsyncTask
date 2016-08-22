@@ -60,7 +60,7 @@ public class MainActivity extends ListActivity {
 		}
 
 		if(item.getItemId() == R.id.action_clear){
-			//output.setText("");
+			setListAdapter(null);
 		}
 
 

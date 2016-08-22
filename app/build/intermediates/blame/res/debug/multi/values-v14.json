@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/build/intermediates/res/merged/debug/values-v14/values-v14.xml",
+        "outputFile": "/Users/eaarcenal/StudioProjects/AsyncTask/app/build/intermediates/res/merged/debug/values-v14/values-v14.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 201
                 },
                 "from": {
-                    "file": "/Users/inovotek/Desktop/Exercise Files/Ch03/03_07/AsyncTask/app/src/main/res/values-v14/styles.xml",
+                    "file": "/Users/eaarcenal/StudioProjects/AsyncTask/app/src/main/res/values-v14/styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

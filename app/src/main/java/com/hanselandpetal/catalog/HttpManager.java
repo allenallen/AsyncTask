@@ -38,4 +38,27 @@ public class HttpManager {
 
     }
 
+    public static String getTechData(String uri,String stock){
+
+        AndroidHttpClient client = AndroidHttpClient.newInstance("AnAgent");
+        HttpGet request = new HttpGet(uri);
+        HttpResponse response;
+
+        try{
+            response = client.execute(request);
+            String hResponse = EntityUtils.toString(response.getEntity());
+
+            //ArrayList<StockModel> list = Parser.parseHtmlString(hResponse);
+            return hResponse;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+        finally {
+            client.close();
+        }
+
+    }
+
 }
